@@ -1,0 +1,16 @@
+
+  <nav>
+    <div class="nav-wrapper">
+        {% load static %}  <a href="{% url 'index' %}" class="brand-logo" ><img src="{% static  "C:\Users\Asus\intern\static/images.jpg" %}" 
+            class="square responsive-img" style="width: 85px" height="40px"></a>
+           
+      
+            
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'login' %}">LogIn</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        
+      </ul>
+    </div>
+  </nav>
