@@ -13,8 +13,7 @@ class CustomerForm(ModelForm):
         exclude = ['user']
 
 class CreateUserForm(UserCreationForm):
-  username=forms.CharField(max_length=256)
-  email=forms.EmailField(widget=forms.EmailInput)
-  password1=forms.CharField(widget=forms.PasswordInput)
-  password2=forms.CharField(widget=forms.PasswordInput)
+  class Meta:
+    model = User
+    fields = ['username', 'email', 'password1', 'password2']
 
